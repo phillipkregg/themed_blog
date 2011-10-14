@@ -4,6 +4,7 @@ gem 'rails', '3.0.10'
 gem 'haml'
 gem 'will_paginate', '3.0.pre2'
 gem 'devise'
+gem 'rake', '0.9.2'
 
 
 # Bundle edge Rails instead:
@@ -19,8 +20,11 @@ group :development, :production, :test do
   gem 'hpricot'
   gem 'ruby_parser'
   gem 'web-app-theme'
-  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
-  
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'  
+end
+
+group :production do
+  gem 'thin'
 end
 
 
