@@ -18,6 +18,7 @@ group :development, :test do
   gem 'hpricot'
   gem 'ruby_parser'
   gem 'web-app-theme'
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
   
 end
 
